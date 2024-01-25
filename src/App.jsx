@@ -5,11 +5,15 @@ import Card from "./components/Card";
 function App() {
   console.log(filmlist);
 
-film = filmlist[0]
+  let film = filmlist[0];
 
   return (
     <>
-      <Card ></Card>
+      <Card
+        title={film.title}
+        description={film.description}
+        image={film.image}
+      ></Card>
     </>
   );
 }

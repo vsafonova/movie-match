@@ -5,9 +5,11 @@ import Card from "./components/Card";
 function App() {
   console.log(filmlist);
 
+film = filmlist[0]
+
   return (
     <>
-      <Card></Card>
+      <Card ></Card>
     </>
   );
 }

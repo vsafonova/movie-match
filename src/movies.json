@@ -1,0 +1,129 @@
+
+[
+  {
+    "title": "Interstellar",
+    "genres": ["Sci-Fi", "Drama"],
+    "image": "interstellar.jpg",
+    "description": "A group of explorers travel through a wormhole in space to save humanity from extinction."
+  },
+  {
+    "title": "The Secret Life of Walter Mitty",
+    "genres": ["Adventure", "Comedy", "Drama"],
+    "image": "the_secret_life_of_walter_mitty.jpg",
+    "description": "A daydreamer escapes his mundane life by embarking on a global journey of self-discovery and adventure."
+  },
+  {
+    "title": "Wonder",
+    "genres": ["Drama", "Family"],
+    "image": "wonder.jpg",
+    "description": "A boy with facial differences enters a mainstream school, inspiring those around him to see beyond appearances."
+  },
+  {
+    "title": "CODA",
+    "genres": ["Drama", "Music"],
+    "image": "coda.jpg",
+    "description": "The only hearing member of a deaf family pursues her passion for singing, challenging family dynamics."
+  },
+  {
+    "title": "The Royal Tenenbaums",
+    "genres": ["Comedy", "Drama"],
+    "image": "the_royal_tenenbaums.jpg",
+    "description": "A dysfunctional family of prodigies reunites when their estranged father announces his terminal illness."
+  },
+  {
+    "title": "August: Osage County",
+    "genres": ["Drama"],
+    "image": "august_osage_county.jpg",
+    "description": "A family crisis brings the strong-willed women of the Weston family back to their dysfunctional home."
+  },
+  {
+    "title": "En man som heter Ove",
+    "genres": ["Comedy", "Drama"],
+    "image": "en_man_som_heter_ove.jpg",
+    "description": "A grumpy retiree forms an unexpected friendship with his new neighbors, leading to a change in perspective."
+  },
+  {
+    "title": "Her",
+    "genres": ["Drama", "Romance", "Sci-Fi"],
+    "image": "her.jpg",
+    "description": "A lonely man develops an emotional connection with an artificial intelligence operating system."
+  },
+  {
+    "title": "The worst person in the world",
+    "genres": ["Drama", "Romance"],
+    "image": "the_worst_person_in_the_world.jpg",
+    "description": "A young woman navigates through love and life, facing the complexities of adulthood and self-discovery."
+  },
+  {
+    "title": "Spring, Summer, Fall, Winter... and Spring",
+    "genres": ["Drama"],
+    "image": "spring_summer_fall_winter_and_spring.jpg",
+    "description": "A Buddhist monk's life unfolds in a tranquil monastery, experiencing the cyclical nature of existence."
+  },
+  {
+    "title": "The Fountain",
+    "genres": ["Drama", "Sci-Fi"],
+    "image": "the_fountain.jpg",
+    "description": "Spanning centuries, a man seeks immortality to save his dying wife, exploring themes of love and mortality."
+  },
+  {
+    "title": "Arrival",
+    "genres": ["Drama", "Mystery", "Sci-Fi"],
+    "image": "arrival.jpg",
+    "description": "A linguist is recruited to communicate with extraterrestrial visitors, unraveling the mysteries of their intentions."
+  },
+  {
+    "title": "Inside Out",
+    "genres": ["Animation", "Adventure", "Comedy"],
+    "image": "inside_out.jpg",
+    "description": "Emotions personified guide a young girl through the challenges of growing up, exploring joy, sadness, and more."
+  },
+  {
+    "title": "Another Earth",
+    "genres": ["Drama", "Romance", "Sci-Fi"],
+    "image": "another_earth.jpg",
+    "description": "Parallel universes and redemption intersect as a woman grapples with a tragic event and a new Earth is discovered."
+  },
+  {
+    "title": "I Origins",
+    "genres": ["Drama", "Romance", "Sci-Fi"],
+    "image": "i_origins.jpg",
+    "description": "A molecular biologist's life takes unexpected turns as he explores scientific discoveries and the nature of existence."
+  },
+  {
+    "title": "Mr. Nobody",
+    "genres": ["Drama", "Fantasy", "Romance"],
+    "image": "mr_nobody.jpg",
+    "description": "In a world where a man is the last mortal human, he reflects on alternate lives and the impact of choices."
+  },
+  {
+    "title": "The Truman Show",
+    "genres": ["Comedy", "Drama", "Sci-Fi"],
+    "image": "the_truman_show.jpg",
+    "description": "A man's life is a televised reality show, but he starts questioning the artificiality of his seemingly perfect world."
+  },
+  {
+    "title": "Eternal Sunshine of the Spotless Mind",
+    "genres": ["Drama", "Romance", "Sci-Fi"],
+    "image": "eternal_sunshine_of_the_spotless_mind.jpg",
+    "description": "After a painful breakup, a couple undergoes a procedure to erase memories, leading to unexpected revelations."
+  },
+  {
+    "title": "Before Sunrise",
+    "genres": ["Drama", "Romance"],
+    "image": "before_sunrise.jpg",
+    "description": "Two strangers meet on a train and spend an unforgettable night in Vienna, contemplating life and love."
+  },
+  {
+    "title": "Before Sunset",
+    "genres": ["Drama", "Romance"],
+    "image": "before_sunset.jpg",
+    "description": "Reconnecting after years, a couple wanders through Paris, exploring the complexities of their past and present."
+  },
+  {
+    "title": "Before Midnight",
+    "genres": ["Drama", "Romance"],
+    "image": "before_midnight.jpg",
+    "description": "The enduring love story continues as a couple faces new challenges during a summer vacation in Greece."
+  }
+]

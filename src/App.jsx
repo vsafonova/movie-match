@@ -16,14 +16,14 @@ function App() {
     console.log("no");
   }
 
-  const onSwipe = (direction) => {
-    console.log("You swiped: " + direction);
+  const onSwipe = (direction, filmTitle) => {
+    console.log(`You swiped ${filmTitle} to the ${direction}`);
   };
 
-  const onCardLeftScreen = (myIdentifier) => {
-    console.log(myIdentifier + " left the screen");
+  const onCardLeftScreen = (filmTitle, myIdentifier) => {
+    console.log(`${filmTitle} left the screen (${myIdentifier})`);
   };
-  
+
   return (
     <>
       <div className="app-container">
@@ -31,8 +31,8 @@ function App() {
           return (
             <TinderCard
               key={i}
-              onSwipe={onSwipe}
-              onCardLeftScreen={() => onCardLeftScreen("fooBar")}
+              onSwipe={(dir) => onSwipe(dir, film.title)}
+              onCardLeftScreen={() => onCardLeftScreen(film.title, "fooBar")}
               preventSwipe={["top", "bottom"]}
             >
               <Card

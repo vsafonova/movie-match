@@ -8,10 +8,6 @@
   background: linear-gradient(#e66465, #9198e5);
 }
 
-* {
-  user-select: none;
-}
-
 #root>div {
   display: flex;
   flex-direction: column;
@@ -52,10 +48,11 @@ h2 {
   position: absolute;
 }
 
-.cardContainer {
+.card-container {
   width: 90vw;
   max-width: 260px;
   height: 300px;
+  border: 1px black solid;
 }
 
 .card {

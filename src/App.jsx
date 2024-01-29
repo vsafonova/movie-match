@@ -23,6 +23,7 @@ function App() {
   const onCardLeftScreen = (myIdentifier) => {
     console.log(myIdentifier + " left the screen");
   };
+  
   return (
     <>
       <div className="app-container">

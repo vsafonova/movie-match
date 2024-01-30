@@ -1,4 +1,4 @@
-import React, { useState, useMemo, useRef } from "react";
+import React, { useState, useMemo, useRef, useEffect } from "react";
 import TinderCard from "react-tinder-card";
 import Card from "../components/Card";
 import { useContext } from "react";
@@ -6,11 +6,17 @@ import { MatchProviderContext } from "../providers/matchProvider";
 
 function Advanced() {
   const { cardData, userData, setUserData } = useContext(MatchProviderContext);
-
   const [currentIndex, setCurrentIndex] = useState(cardData.length - 1);
   const [lastDirection, setLastDirection] = useState();
   // used for outOfFrame closure
   const currentIndexRef = useRef(currentIndex);
+
+  useEffect(() => {
+    console.log("useffect, currentindex");
+    if (currentIndex < 0) {
+      console.log("Out of cards :(");
+    }
+  }, [currentIndex]);
 
   const childRefs = useMemo(
     () =>
@@ -114,15 +120,6 @@ function Advanced() {
           Swipe right!
         </button>
       </div>
-      {lastDirection ? (
-        <h2 key={lastDirection} className="infoText">
-          You swiped {lastDirection}
-        </h2>
-      ) : (
-        <h2 className="infoText">
-          Swipe a card or press a button to get Restore Card button visible!
-        </h2>
-      )}
     </div>
   );
 }

@@ -5,7 +5,7 @@ import { useContext } from "react";
 import { MatchProviderContext } from "../providers/matchProvider";
 
 function Advanced() {
-  const { cardData } = useContext(MatchProviderContext);
+  const { cardData, userData, setUserData } = useContext(MatchProviderContext);
 
   const [currentIndex, setCurrentIndex] = useState(cardData.length - 1);
   const [lastDirection, setLastDirection] = useState();
@@ -32,6 +32,12 @@ function Advanced() {
   // set last direction and decrease current index
   const swiped = (direction, nameToDelete, index) => {
     console.log(index + "was swiped " + direction);
+    //logic for collecting data goes here
+    if (direction === "right") {
+      let obj = userData;
+      obj.push(cardData[index].id);
+      setUserData(obj);
+    }
     setLastDirection(direction);
     updateCurrentIndex(index - 1);
   };

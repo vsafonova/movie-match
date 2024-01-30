@@ -1,7 +1,6 @@
-import Button from "./Button";
 import { useContext } from "react";
 import { MatchProviderContext } from "../providers/matchProvider";
-export default function Card({ title, image, description, genres, handleNo,handleYes }) {
+export default function Card({ title, image, description, genres }) {
   const { cardData, setCardData } = useContext(MatchProviderContext);
 
   return (
@@ -18,10 +17,6 @@ export default function Card({ title, image, description, genres, handleNo,handl
           {genres.map((genre, i) => {
             return <span key={i}>{genre}</span>;
           })}
-        </div>
-        <div className="button-container">
-          <Button text={"Yes"} handleClick={handleYes} />
-          <Button text={"No"} handleClick={handleNo} />
         </div>
       </div>
     </>

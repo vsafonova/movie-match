@@ -5,6 +5,7 @@
   width: 100vw;
   min-height: 100vh;
   overflow: hidden;
+  /* background: linear-gradient(#fff, #999); */
   background: linear-gradient(#e66465, #9198e5);
 }
 
@@ -48,11 +49,10 @@ h2 {
   position: absolute;
 }
 
-.card-container {
+.cardContainer {
   width: 90vw;
   max-width: 260px;
   height: 300px;
-  border: 1px black solid;
 }
 
 .card {

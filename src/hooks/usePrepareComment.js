@@ -20,7 +20,7 @@ const genreRecommendations = {
 
 export function usePrepareComment(data, cards, name) {
   const genres = extractGenres(data, cards);
-  const quote1 = genreRecommendations[genres];
+  const quote1 = genreRecommendations[genres[0]];
   return quote1;
 }
 
@@ -38,7 +38,7 @@ function extractGenres(movieIds, cards) {
   // Remove duplicate genres (if any)
   console.log(countGenres(relatedGenres));
   console.log(topGenres(countGenres(relatedGenres)));
-  return relatedGenres;
+  return topGenres(countGenres(relatedGenres));
 }
 
 function countGenres(arr) {

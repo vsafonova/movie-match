@@ -1,0 +1,72 @@
+[
+  {
+    "id": 0,
+    "title": "Interstellar",
+    "genres": ["Sci-Fi", "Drama"],
+    "image": "interstellar.jpg",
+    "description": "A group of explorers travel through a wormhole in space to save humanity from extinction."
+  },
+  {
+    "id": 1,
+    "title": "The Secret Life of Walter Mitty",
+    "genres": ["Adventure", "Comedy", "Drama"],
+    "image": "the_secret_life_of_walter_mitty.jpg",
+    "description": "A daydreamer escapes his mundane life by embarking on a global journey of self-discovery and adventure."
+  },
+  {
+    "id": 2,
+    "title": "Wonder",
+    "genres": ["Fantasy", "Family"],
+    "image": "wonder.jpg",
+    "description": "A boy with facial differences enters a mainstream school, inspiring those around him to see beyond appearances."
+  },
+  {
+    "id": 3,
+    "title": "CODA",
+    "genres": ["Music", "Family"],
+    "image": "coda.jpg",
+    "description": "The only hearing member of a deaf family pursues her passion for singing, challenging family dynamics."
+  },
+  {
+    "id": 4,
+    "title": "The Royal Tenenbaums",
+    "genres": ["Comedy", "Drama"],
+    "image": "the_royal_tenenbaums.jpg",
+    "description": "A dysfunctional family of prodigies reunites when their estranged father announces his terminal illness."
+  },
+  {
+    "id": 5,
+    "title": "August: Osage County",
+    "genres": ["Thriller"],
+    "image": "august_osage_county.jpg",
+    "description": "A family crisis brings the strong-willed women of the Weston family back to their dysfunctional home."
+  },
+  {
+    "id": 6,
+    "title": "En man som heter Ove",
+    "genres": ["Comedy", "Drama"],
+    "image": "en_man_som_heter_ove.jpg",
+    "description": "A grumpy retiree forms an unexpected friendship with his new neighbors, leading to a change in perspective."
+  },
+  {
+    "id": 7,
+    "title": "Her",
+    "genres": ["Romance", "Sci-Fi"],
+    "image": "her.jpg",
+    "description": "A lonely man develops an emotional connection with an artificial intelligence operating system."
+  },
+  {
+    "id": 8,
+    "title": "The worst person in the world",
+    "genres": ["Romance"],
+    "image": "the_worst_person_in_the_world.jpg",
+    "description": "A young woman navigates through love and life, facing the complexities of adulthood and self-discovery."
+  },
+  {
+    "id": 9,
+    "title": "Spring, Summer, Fall, Winter... and Spring",
+    "genres": ["Spiritual"],
+    "image": "spring_summer_fall_winter_and_spring.jpg",
+    "description": "A Buddhist monk's life unfolds in a tranquil monastery, experiencing the cyclical nature of existence."
+  }
+]

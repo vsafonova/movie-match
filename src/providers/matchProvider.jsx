@@ -1,10 +1,10 @@
 import { useState, useEffect, createContext } from "react";
-import films from "../movies.json";
-import series from "../series.json";
+import data from "../data.json";
+
 export const MatchProviderContext = createContext();
 
 export const MatchProvider = ({ children }) => {
-  const [cardData, setCardData] = useState(series);
+  const [cardData, setCardData] = useState(data);
   const [userData, setUserData] = useState([]);
   const [userName, setUsername] = useState("");
   const [showResult, setShowResult] = useState(false);
@@ -23,7 +23,7 @@ export const MatchProvider = ({ children }) => {
   };
 
   useEffect(() => {
-    setCardData(series);
+    setCardData(data);
   }, []);
 
   return (

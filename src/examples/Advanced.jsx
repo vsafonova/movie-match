@@ -29,7 +29,6 @@ function Advanced() {
     if (currentIndex < 0) {
       console.log("Out of cards :(");
       setShowNameInput(true);
-      console.log(usePrepareComment(userData, cardData));
     }
   }, [currentIndex]);
 

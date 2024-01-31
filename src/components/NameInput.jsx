@@ -1,8 +1,10 @@
 import { useContext, useRef } from "react";
 import { MatchProviderContext } from "../providers/matchProvider";
+import { usePrepareComment } from "../hooks/usePrepareComment";
 
 export default function NameInput() {
   const {
+    cardData,
     userData,
     userName,
     setUsername,
@@ -19,6 +21,8 @@ export default function NameInput() {
     setUsername(inputRef.current.value);
     inputRef.current.value = "";
     setShowNameInput(false);
+    console.log(usePrepareComment(userData, cardData, userName));
+
     setShowResult(true);
   }
 

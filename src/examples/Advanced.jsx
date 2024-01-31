@@ -4,6 +4,8 @@ import Card from "../components/Card";
 import { useContext } from "react";
 import { MatchProviderContext } from "../providers/matchProvider";
 import NameInput from "../components/NameInput";
+import ResultPage from "../components/Results";
+import { usePrepareComment } from "../hooks/usePrepareComment";
 
 function Advanced() {
   const {
@@ -24,10 +26,10 @@ function Advanced() {
   const currentIndexRef = useRef(currentIndex);
 
   useEffect(() => {
-    console.log("useffect, currentindex");
     if (currentIndex < 0) {
       console.log("Out of cards :(");
       setShowNameInput(true);
+      console.log(usePrepareComment(userData, cardData));
     }
   }, [currentIndex]);
 
@@ -50,7 +52,7 @@ function Advanced() {
 
   // set last direction and decrease current index
   const swiped = (direction, nameToDelete, index) => {
-    console.log(index + "was swiped " + direction);
+    // console.log(index + "was swiped " + direction);
     //logic for collecting data goes here
     if (direction === "right") {
       let obj = userData;
@@ -62,7 +64,7 @@ function Advanced() {
   };
 
   const outOfFrame = (name, idx) => {
-    console.log(`${name} (${idx}) left the screen!`, currentIndexRef.current);
+    // console.log(`${name} (${idx}) left the screen!`, currentIndexRef.current);
     // handle the case in which go back is pressed before card goes outOfFrame
     currentIndexRef.current >= idx && childRefs[idx].current.restoreCard();
     // TODO: when quickly swipe and restore multiple times the same card,
@@ -94,7 +96,7 @@ function Advanced() {
         href="https://fonts.googleapis.com/css?family=Alatsi&display=swap"
         rel="stylesheet"
       />
-
+      <ResultPage />
       <h1>Movie Match</h1>
       <div className="cardContainer">
         {cardData.map((entry, index) => (

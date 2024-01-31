@@ -3,11 +3,23 @@ import TinderCard from "react-tinder-card";
 import Card from "../components/Card";
 import { useContext } from "react";
 import { MatchProviderContext } from "../providers/matchProvider";
+import NameInput from "../components/NameInput";
 
 function Advanced() {
-  const { cardData, userData, setUserData } = useContext(MatchProviderContext);
+  const {
+    cardData,
+    userData,
+    setUserData,
+    userName,
+    setUsername,
+    showResult,
+    setShowResult,
+    showNameInput,
+    setShowNameInput,
+  } = useContext(MatchProviderContext);
   const [currentIndex, setCurrentIndex] = useState(cardData.length - 1);
   const [lastDirection, setLastDirection] = useState();
+
   // used for outOfFrame closure
   const currentIndexRef = useRef(currentIndex);
 
@@ -15,6 +27,7 @@ function Advanced() {
     console.log("useffect, currentindex");
     if (currentIndex < 0) {
       console.log("Out of cards :(");
+      setShowNameInput(true);
     }
   }, [currentIndex]);
 
@@ -81,6 +94,7 @@ function Advanced() {
         href="https://fonts.googleapis.com/css?family=Alatsi&display=swap"
         rel="stylesheet"
       />
+
       <h1>Movie Match</h1>
       <div className="cardContainer">
         {cardData.map((entry, index) => (
@@ -99,20 +113,20 @@ function Advanced() {
             />
           </TinderCard>
         ))}
+        <NameInput />
       </div>
-      <div className="buttons">
+
+      <div
+        className="buttons"
+        style={{ visibility: showNameInput ? "hidden" : "visible" }}
+      >
         <button
           style={{ backgroundColor: !canSwipe && "#c3c4d3" }}
           onClick={() => swipe("left")}
         >
           Swipe left!
         </button>
-        <button
-          style={{ backgroundColor: !canGoBack && "#c3c4d3" }}
-          onClick={() => goBack()}
-        >
-          Undo swipe!
-        </button>
+
         <button
           style={{ backgroundColor: !canSwipe && "#c3c4d3" }}
           onClick={() => swipe("right")}

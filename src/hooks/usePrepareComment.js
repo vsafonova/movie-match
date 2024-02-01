@@ -19,8 +19,9 @@ export function usePrepareComment(data, cards, name) {
     Thriller: `It seems thriller is your biggest genre, ${name}! Hold onto your popcorn, you like your movies tense and your popcorn salty. Your heart rate spikes faster than a roller coaster on a thriller night. Here are some thrilling recommendations to keep you on the edge of your seat!`,
   };
   const genres = extractGenres(data, cards);
-  const quote1 =
-    genreRecommendations[genres[0]] || "You don't like anything LoL";
+  const defaultQuote =
+    "You are a picky one! You don’t seem to like anything, that’s a shame…I’m really good at recommending movies, please try again and be a bit more cheery next round";
+  const quote1 = genreRecommendations[genres[0]] || defaultQuote;
   return quote1;
 }
 

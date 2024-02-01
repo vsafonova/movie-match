@@ -7,6 +7,7 @@ export const MatchProvider = ({ children }) => {
   const [cardData, setCardData] = useState(data);
   const [userData, setUserData] = useState([]);
   const [userName, setUsername] = useState("");
+  const [showInstructions, setShowInstructions] = useState(true);
   const [showResult, setShowResult] = useState(false);
   const [showNameInput, setShowNameInput] = useState(false);
   const value = {
@@ -20,6 +21,8 @@ export const MatchProvider = ({ children }) => {
     setShowResult,
     showNameInput,
     setShowNameInput,
+    showInstructions,
+    setShowInstructions,
   };
 
   useEffect(() => {

@@ -6,6 +6,7 @@ import { MatchProviderContext } from "../providers/matchProvider";
 import NameInput from "../components/NameInput";
 import ResultPage from "../components/Results";
 import { usePrepareComment } from "../hooks/usePrepareComment";
+import Instructions from "../components/Instructions";
 
 function Advanced() {
   const {
@@ -95,6 +96,7 @@ function Advanced() {
         href="https://fonts.googleapis.com/css?family=Alatsi&display=swap"
         rel="stylesheet"
       />
+      <Instructions />
       <ResultPage />
       <h1>Movie Match</h1>
       <div className="cardContainer">

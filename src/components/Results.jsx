@@ -13,8 +13,10 @@ export default function ResultPage() {
     showNameInput,
     setShowNameInput,
   } = useContext(MatchProviderContext);
-
-  const quote = usePrepareComment(userData, cardData, userName);
+  let quote = "";
+  if (showResult) {
+    quote = usePrepareComment(userData, cardData, userName);
+  }
 
   return (
     <div

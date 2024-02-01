@@ -1,12 +1,11 @@
-import React, { useState, useMemo, useRef, useEffect } from "react";
+import React, { useState, useEffect, useContext, useMemo, useRef } from "react";
 import TinderCard from "react-tinder-card";
-import Card from "../components/Card";
-import { useContext } from "react";
+import { usePrepareComment } from "../hooks/usePrepareComment";
 import { MatchProviderContext } from "../providers/matchProvider";
 import NameInput from "../components/NameInput";
 import ResultPage from "../components/Results";
-import { usePrepareComment } from "../hooks/usePrepareComment";
 import Instructions from "../components/Instructions";
+import Card from "../components/Card";
 
 function Advanced() {
   const {
@@ -20,6 +19,7 @@ function Advanced() {
     showNameInput,
     setShowNameInput,
   } = useContext(MatchProviderContext);
+
   const [currentIndex, setCurrentIndex] = useState(cardData.length - 1);
   const [lastDirection, setLastDirection] = useState();
 

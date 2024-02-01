@@ -13,6 +13,7 @@ export default function NameInput() {
     showNameInput,
     setShowNameInput,
   } = useContext(MatchProviderContext);
+
   const inputRef = useRef();
 
   function handleSubmit(e) {

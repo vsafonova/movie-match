@@ -59,8 +59,8 @@ h2 {
 
 .cardContainer {
   width: 90vw;
-  max-width: 260px;
-  height: 300px;
+  max-width: 350px;
+  height: 500px;
   border-radius: 20px;
 }
 
@@ -68,8 +68,8 @@ h2 {
   position: relative;
   background-color: #fff;
   width: 80vw;
-  max-width: 260px;
-  height: 300px;
+  max-width: 350px;
+  height: 500px;
   border-radius: 20px;
   background-size: cover;
   background-position: center;

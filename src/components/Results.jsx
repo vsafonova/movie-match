@@ -13,7 +13,9 @@ export default function ResultPage() {
     showNameInput,
     setShowNameInput,
   } = useContext(MatchProviderContext);
+
   let quote = "";
+
   if (showResult) {
     quote = usePrepareComment(userData, cardData, userName);
   }
@@ -23,7 +25,7 @@ export default function ResultPage() {
       className="result-page"
       style={{ visibility: showResult ? "visible" : "hidden" }}
     >
-      <h2>Your results will be here </h2>
+      <h2>Your results will be here</h2>
       <div>{quote}</div>
     </div>
   );

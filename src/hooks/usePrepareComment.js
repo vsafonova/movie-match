@@ -19,7 +19,8 @@ export function usePrepareComment(data, cards, name) {
     Thriller: `It seems thriller is your biggest genre, ${name}! Hold onto your popcorn, you like your movies tense and your popcorn salty. Your heart rate spikes faster than a roller coaster on a thriller night. Here are some thrilling recommendations to keep you on the edge of your seat!`,
   };
   const genres = extractGenres(data, cards);
-  const quote1 = genreRecommendations[genres[0]];
+  const quote1 =
+    genreRecommendations[genres[0]] || "You don't like anything LoL";
   return quote1;
 }
 
@@ -35,9 +36,11 @@ function extractGenres(movieIds, cards) {
   });
 
   // Remove duplicate genres (if any)
-  console.log(countGenres(relatedGenres));
-  console.log(topGenres(countGenres(relatedGenres)));
-  return topGenres(countGenres(relatedGenres));
+  // console.log(countGenres(relatedGenres));
+  // console.log(topGenres(countGenres(relatedGenres)));
+  const countedGenres = countGenres(relatedGenres);
+  const genreArray = topGenres(countedGenres);
+  return genreArray;
 }
 
 function countGenres(arr) {
@@ -61,17 +64,20 @@ function countGenres(arr) {
 
 function topGenres(data) {
   // Convert object to array of key-value pairs
-  const topGenres = Object.entries(data);
+  const genres = Object.entries(data);
+
+  // const genres = objectentries
+  // const topGenres = tosorted genres,
 
   // Sort the array in descending order based on values
-  topGenres.sort((a, b) => b[1] - a[1]);
+  const topGenres = genres.toSorted((a, b) => b[1] - a[1]);
 
   const finalTopGenres = topGenres.slice(0, 2).map((genre) => genre[0]);
 
   return finalTopGenres;
 }
 
-//usage will be variable = usePrepareComment(userData, cardData)
+//usage will be variable = usePrepareComment(userData, cardData,userName)
 
 //Input - list of IDS
 

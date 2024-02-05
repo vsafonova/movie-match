@@ -26,27 +26,28 @@ function Advanced() {
   // used for outOfFrame closure
   const currentIndexRef = useRef(currentIndex);
 
-useEffect(() => {
-  updateCurrentIndex(cardData.length -1)
-},[cardData.length])
+  useEffect(() => {
+    updateCurrentIndex(cardData.length - 1);
+  }, [cardData.length]);
 
   useEffect(() => {
     if (currentIndex < 0) {
       console.log("Out of cards :(");
+
       setShowNameInput(true);
     }
   }, [currentIndex]);
 
-  const childRefs = useMemo(
-    () => {
-      return Array(cardData.length)
-        .fill(0)
-          .map((i) => React.createRef())},
-    [cardData.length]
-  );
+  const childRefs = useMemo(() => {
+    return Array(cardData.length)
+      .fill(0)
+
+      .map((i) => React.createRef());
+  }, [cardData.length]);
 
   const updateCurrentIndex = (val) => {
     setCurrentIndex(val);
+
     currentIndexRef.current = val;
   };
 
@@ -55,15 +56,22 @@ useEffect(() => {
   const canSwipe = currentIndex >= 0;
 
   // set last direction and decrease current index
+
   const swiped = (direction, nameToDelete, index) => {
     // console.log(index + "was swiped " + direction);
+
     //logic for collecting data goes here
+
     if (direction === "right") {
       let obj = userData;
+
       obj.push(cardData[index].id);
+
       setUserData(obj);
     }
+
     setLastDirection(direction);
+
     updateCurrentIndex(index - 1);
   };
 
@@ -83,10 +91,14 @@ useEffect(() => {
   };
 
   // increase current index and show card
+
   const goBack = async () => {
     if (!canGoBack) return;
+
     const newIndex = currentIndex + 1;
+
     updateCurrentIndex(newIndex);
+
     await childRefs[newIndex].current.restoreCard();
   };
 
@@ -96,13 +108,18 @@ useEffect(() => {
         href="https://fonts.googleapis.com/css?family=Damion&display=swap"
         rel="stylesheet"
       />
+
       <link
         href="https://fonts.googleapis.com/css?family=Alatsi&display=swap"
         rel="stylesheet"
       />
+
       <Instructions />
-      <ResultPage />
+
+      {showResult && <ResultPage />}
+
       <h1>Movie Match</h1>
+
       <div className="cardContainer">
         {cardData.map((entry, index) => (
           <TinderCard
@@ -120,11 +137,13 @@ useEffect(() => {
             />
           </TinderCard>
         ))}
+
         <NameInput />
       </div>
 
       <div
         className="buttons"
+
         // style={{ visibility: showNameInput ? "hidden" : "visible" }}
       >
         <button

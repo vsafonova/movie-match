@@ -23,8 +23,6 @@ function Advanced() {
   const [currentIndex, setCurrentIndex] = useState(cardData.length - 1);
   const [lastDirection, setLastDirection] = useState();
 
-
-
   // used for outOfFrame closure
   const currentIndexRef = useRef(currentIndex);
 

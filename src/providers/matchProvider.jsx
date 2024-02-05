@@ -10,7 +10,7 @@ export const MatchProvider = ({ children }) => {
   const [showInstructions, setShowInstructions] = useState(false);
   const [showResult, setShowResult] = useState(false);
   const [showNameInput, setShowNameInput] = useState(false);
-  const { data: cardData , loading, error } = useFetch('https://localhost/gpt/wp-json/api/v1/movies');
+  const { data: cardData , loading, error } = useFetch('http://arixplanet.com/wp-json/movie-match/api/v1/movies');
   const value = {
     cardData,
     userData,

@@ -32,7 +32,7 @@ export default function NameInput() {
       className="name-input"
       style={{ visibility: showNameInput ? "visible" : "hidden" }}
     >
-      <h2>Enter your name</h2>
+      <h2>Enter your first and last name</h2>
       <form>
         <input type="text" ref={inputRef} />
         <button type="submit" onClick={handleSubmit}>

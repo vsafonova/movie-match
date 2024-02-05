@@ -1,6 +1,7 @@
 import { useContext, useRef } from "react";
 import { MatchProviderContext } from "../providers/matchProvider";
 import { usePrepareComment } from "../hooks/usePrepareComment";
+import useFetch from "../hooks/useFetch";
 
 export default function ResultPage() {
   const {
@@ -13,15 +14,6 @@ export default function ResultPage() {
     showNameInput,
     setShowNameInput,
   } = useContext(MatchProviderContext);
-
-<<<<<<< Updated upstream
-  let quote = "";
-
-  if (showResult) {
-    quote = usePrepareComment(userData, cardData, userName);
-  }
-=======
-  const [resultsLoading, setResultsLoading] = useState(true);
 
   let quote = "";
 
@@ -36,7 +28,6 @@ export default function ResultPage() {
   console.log("RESULT", data);
   
   quote = usePrepareComment(userData, cardData, userName);
->>>>>>> Stashed changes
 
   return (
     <div

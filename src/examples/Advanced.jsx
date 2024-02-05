@@ -52,11 +52,9 @@ function Advanced() {
   };
 
   const canGoBack = currentIndex < cardData.length - 1;
-
   const canSwipe = currentIndex >= 0;
 
   // set last direction and decrease current index
-
   const swiped = (direction, nameToDelete, index) => {
     // console.log(index + "was swiped " + direction);
 
@@ -77,10 +75,15 @@ function Advanced() {
 
   const outOfFrame = (name, idx) => {
     // console.log(`${name} (${idx}) left the screen!`, currentIndexRef.current);
+
     // handle the case in which go back is pressed before card goes outOfFrame
+
     currentIndexRef.current >= idx && childRefs[idx].current.restoreCard();
+
     // TODO: when quickly swipe and restore multiple times the same card,
+
     // it happens multiple outOfFrame events are queued and the card disappear
+
     // during latest swipes. Only the last outOfFrame event should be considered valid
   };
 
@@ -150,14 +153,14 @@ function Advanced() {
           style={{ backgroundColor: !canSwipe && "#c3c4d3" }}
           onClick={() => swipe("left")}
         >
-          Swipe left
+          Swipe left!
         </button>
 
         <button
           style={{ backgroundColor: !canSwipe && "#c3c4d3" }}
           onClick={() => swipe("right")}
         >
-          Swipe right
+          Swipe right!
         </button>
       </div>
     </div>

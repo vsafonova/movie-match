@@ -26,6 +26,10 @@ function Advanced() {
   // used for outOfFrame closure
   const currentIndexRef = useRef(currentIndex);
 
+useEffect(() => {
+  updateCurrentIndex(cardData.length -1)
+},[cardData.length])
+
   useEffect(() => {
     if (currentIndex < 0) {
       console.log("Out of cards :(");
@@ -34,11 +38,11 @@ function Advanced() {
   }, [currentIndex]);
 
   const childRefs = useMemo(
-    () =>
-      Array(cardData.length)
+    () => {
+      return Array(cardData.length)
         .fill(0)
-        .map((i) => React.createRef()),
-    []
+          .map((i) => React.createRef())},
+    [cardData.length]
   );
 
   const updateCurrentIndex = (val) => {
@@ -121,7 +125,7 @@ function Advanced() {
 
       <div
         className="buttons"
-        style={{ visibility: showNameInput ? "hidden" : "visible" }}
+        // style={{ visibility: showNameInput ? "hidden" : "visible" }}
       >
         <button
           style={{ backgroundColor: !canSwipe && "#c3c4d3" }}

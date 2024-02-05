@@ -1,18 +1,18 @@
 import { useState, useEffect, createContext } from "react";
-import data from "../data.json";
+// import data from "../data.json";
+import useFetch from "../hooks/useFetch";
 
 export const MatchProviderContext = createContext();
 
 export const MatchProvider = ({ children }) => {
-  const [cardData, setCardData] = useState(data);
   const [userData, setUserData] = useState([]);
   const [userName, setUsername] = useState("");
   const [showInstructions, setShowInstructions] = useState(false);
   const [showResult, setShowResult] = useState(false);
   const [showNameInput, setShowNameInput] = useState(false);
+  const { data: cardData , loading, error } = useFetch('https://localhost/gpt/wp-json/api/v1/movies');
   const value = {
     cardData,
-    setCardData,
     userData,
     setUserData,
     userName,
@@ -25,9 +25,7 @@ export const MatchProvider = ({ children }) => {
     setShowInstructions,
   };
 
-  useEffect(() => {
-    setCardData(data);
-  }, []);
+  console.log(cardData);
 
   return (
     <MatchProviderContext.Provider value={value}>

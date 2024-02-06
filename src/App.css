@@ -16,13 +16,12 @@ body {
   width: 100%;
   background-image: url(./public/bg-mobile.webp);
   background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh;
+  background-size: 100%;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 992px) {
   #root {
-    background-image: url(./public/bg-desktop.webp);
+    background-image: url(./public/bg-desktop.webp)
   }
 }
 
@@ -68,8 +67,7 @@ body {
   border-radius: 20px;
 } */
 
-.card-wrapper
-{
+.card-wrapper {
   /* margin: 0 auto; */
   width: 100%;
 }
@@ -82,8 +80,7 @@ body {
   margin: 0 auto;
 }
 
-.card
-{
+.card {
   position: relative;
   max-width: 360px;
   height: 530px;
@@ -99,28 +96,31 @@ body {
   overflow: hidden;
 }
 
-.card-detail
-{
-  background: linear-gradient(to bottom, transparent, #00000082, #000000cf, #000000c7, black);
+.card-detail {
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    #00000082,
+    #000000cf,
+    #000000c7,
+    black
+  );
   text-align: left;
   padding: 28px;
   color: #fff;
   line-height: 23px;
 }
 
-.card-title
-{
+.card-title {
   margin-bottom: 7px;
   text-shadow: 0 0 35px #000;
 }
 
-.card-description
-{
+.card-description {
   padding-bottom: 18px;
 }
 
-.card-tags
-{
+.card-tags {
   background-color: red;
   border-radius: 30px;
   margin-right: 5px;
@@ -130,9 +130,13 @@ body {
 .buttons {
   margin-right: 20px;
   margin-left: 20px;
+  display: none;
   /* display: flex; */
   /* flex-wrap: wrap; */
 }
+
+
+
 .swipe {
   position: absolute;
 }
@@ -140,6 +144,12 @@ body {
 @media (max-width: 625px) {
   .buttons {
     flex-direction: column;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .buttons {
+    display: block;
   }
 }
 

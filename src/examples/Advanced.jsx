@@ -123,14 +123,14 @@ function Advanced() {
           style={{ backgroundColor: !canSwipe && "#c3c4d3" }}
           onClick={() => swipe("left")}
         >
-          Swipe left ❌
+          ❌
         </button>
 
         <button
           style={{ backgroundColor: !canSwipe && "#c3c4d3" }}
           onClick={() => swipe("right")}
         >
-          Swipe right ❤️
+          ❤️
         </button>
       </div>
     </div>

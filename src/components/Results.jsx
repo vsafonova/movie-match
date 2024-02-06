@@ -17,16 +17,15 @@ export default function ResultPage() {
 
   let quote = "";
 
-  const payload = { name: userName, data: userData };
-
+  const payload = { userName: userName, userData: userData };
   const { data, loading, error } = useFetch(
-    "http://localhost/gpt/wp-json/movie-match/api/v1/submit",
+    "https://arixplanet.com/wp-json/movie-match/api/v1/submit",
     "POST",
     payload
   );
 
   console.log("RESULT", data);
-  
+
   quote = usePrepareComment(userData, cardData, userName);
 
   return (
@@ -36,6 +35,12 @@ export default function ResultPage() {
     >
       <h2>Your results will be here</h2>
       <div>{quote}</div>
+      <div>
+        <h3>Your reccomendations are</h3>
+        <div>movie 1</div>
+        <div>movie 2</div>
+        <div>movie 3</div>
+      </div>
     </div>
   );
 }

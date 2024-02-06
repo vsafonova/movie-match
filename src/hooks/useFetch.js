@@ -1,13 +1,21 @@
 import { useState, useEffect } from "react";
-
-const useFetch = (url) => {
+const useFetch = (url, method, payload) => {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+
   useEffect(() => {
     const fetchData = async () => {
+      const jsonData = JSON.stringify(payload);
+      console.log("Stringfied payload : " + jsonData);
       try {
-        const response = await fetch(url);
+        const response = await fetch(url, {
+          method,
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: jsonData,
+        });
         if (!response.ok) {
           throw new Error(`HTTP error! Status: ${response.status}`);
         }
@@ -19,6 +27,7 @@ const useFetch = (url) => {
         setLoading(false);
       }
     };
+
     fetchData();
   }, [url]);
   return { data, loading, error };

@@ -29,6 +29,7 @@ function Advanced() {
 
   useEffect(() => {
     updateCurrentIndex(cardData.length - 1);
+    setShowNameInput(false);
   }, [cardData.length]);
 
   useEffect(() => {
@@ -107,23 +108,10 @@ function Advanced() {
   };
 
   return (
-    <div className="wrapper">
-      <link
-        href="https://fonts.googleapis.com/css?family=Damion&display=swap"
-        rel="stylesheet"
-      />
-
-      <link
-        href="https://fonts.googleapis.com/css?family=Alatsi&display=swap"
-        rel="stylesheet"
-      />
-
+    <div>
       <Instructions />
-
       {showResult && <ResultPage />}
-
       <h1>Movie Match</h1>
-
       <div
         className="card-container"
         style={{ visibility: showInstructions ? "hidden" : "visible" }}
@@ -136,7 +124,7 @@ function Advanced() {
             onSwipe={(dir) => swiped(dir, entry.title, index)}
             onCardLeftScreen={() => outOfFrame(entry.title, index)}
           >
-            <div style={{ width: "100%", overflow: "hidden" }}>
+            <div>
               <Card
                 title={entry.title}
                 description={entry.description}

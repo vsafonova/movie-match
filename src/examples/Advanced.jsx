@@ -108,10 +108,10 @@ function Advanced() {
   };
 
   return (
-    <div>
+    <div className="card-wrapper">
       <Instructions />
       {showResult && <ResultPage />}
-      <h1>Movie Match</h1>
+      <h1 className="app-title">Movie Match</h1>
       <div
         className="card-container"
         style={{ visibility: showInstructions ? "hidden" : "visible" }}

@@ -1,32 +1,24 @@
-import { useContext, useRef } from "react";
+import { useContext } from "react";
 import { MatchProviderContext } from "../providers/matchProvider";
-import { usePrepareComment } from "../hooks/usePrepareComment";
+import { prepareComment } from "../helpers/PrepareComment";
 import useFetch from "../hooks/useFetch";
 
 export default function ResultPage() {
-  const {
-    cardData,
-    userData,
-    userName,
-    setUsername,
-    showResult,
-    setShowResult,
-    showNameInput,
-    setShowNameInput,
-  } = useContext(MatchProviderContext);
+  const { cardData, userData, userName, showResult } =
+    useContext(MatchProviderContext);
 
   let quote = "";
 
   const payload = { userName: userName, userData: userData };
   const { data, loading, error } = useFetch(
-    "https://arixplanet.com/wp-json/movie-match/api/v1/submit",
+    "https://arashbesharat.com/wp-json/movie-match/api/v1/submit",
     "POST",
     payload
   );
 
   console.log("RESULT", data);
 
-  quote = usePrepareComment(userData, cardData, userName);
+  quote = prepareComment(userData, cardData, userName);
 
   return (
     <div
@@ -34,12 +26,11 @@ export default function ResultPage() {
       style={{ visibility: showResult ? "visible" : "hidden" }}
     >
       <h2>Your results will be here</h2>
-      <div>{quote}</div>
+      <div>{quote[0]}</div>
+      <div>{quote[1]}</div>
       <div>
         <h3>Your reccomendations are</h3>
-        <div>movie 1</div>
-        <div>movie 2</div>
-        <div>movie 3</div>
+        <div>{data.recommendations}</div>
       </div>
     </div>
   );

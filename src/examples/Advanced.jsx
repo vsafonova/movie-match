@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useContext, useMemo, useRef } from "react";
 import TinderCard from "react-tinder-card";
-import { usePrepareComment } from "../hooks/usePrepareComment";
 import { MatchProviderContext } from "../providers/matchProvider";
 import NameInput from "../components/NameInput";
 import ResultPage from "../components/Results";
@@ -12,16 +11,13 @@ function Advanced() {
     cardData,
     userData,
     setUserData,
-    userName,
-    setUsername,
     showResult,
-    setShowResult,
     showNameInput,
     setShowNameInput,
     showInstructions,
   } = useContext(MatchProviderContext);
 
-  const [currentIndex, setCurrentIndex] = useState(cardData.length - 1);
+  const [currentIndex, setCurrentIndex] = useState();
   const [lastDirection, setLastDirection] = useState();
 
   // used for outOfFrame closure
@@ -53,7 +49,6 @@ function Advanced() {
     currentIndexRef.current = val;
   };
 
-  const canGoBack = currentIndex < cardData.length - 1;
   const canSwipe = currentIndex >= 0;
 
   // set last direction and decrease current index
@@ -76,17 +71,7 @@ function Advanced() {
   };
 
   const outOfFrame = (name, idx) => {
-    // console.log(`${name} (${idx}) left the screen!`, currentIndexRef.current);
-
-    // handle the case in which go back is pressed before card goes outOfFrame
-
     currentIndexRef.current >= idx && childRefs[idx].current.restoreCard();
-
-    // TODO: when quickly swipe and restore multiple times the same card,
-
-    // it happens multiple outOfFrame events are queued and the card disappear
-
-    // during latest swipes. Only the last outOfFrame event should be considered valid
   };
 
   const swipe = async (dir) => {
@@ -96,16 +81,6 @@ function Advanced() {
   };
 
   // increase current index and show card
-
-  const goBack = async () => {
-    if (!canGoBack) return;
-
-    const newIndex = currentIndex + 1;
-
-    updateCurrentIndex(newIndex);
-
-    await childRefs[newIndex].current.restoreCard();
-  };
 
   return (
     <div className="card-wrapper">

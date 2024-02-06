@@ -13,7 +13,7 @@ export const MatchProvider = ({ children }) => {
     data: cardData,
     loading,
     error,
-  } = useFetch("https://arixplanet.com/wp-json/movie-match/api/v1/movies");
+  } = useFetch("https://arashbesharat.com/wp-json/movie-match/api/v1/movies");
   const value = {
     cardData,
     userData,

@@ -11,7 +11,7 @@ export default function ResultPage() {
 
   const payload = { userName: userName, userData: userData };
   const { data, loading, error } = useFetch(
-    "https://arixplanet.com/wp-json/movie-match/api/v1/submit",
+    "https://arashbesharat.com/wp-json/movie-match/api/v1/submit",
     "POST",
     payload
   );
@@ -30,9 +30,7 @@ export default function ResultPage() {
       <div>{quote[1]}</div>
       <div>
         <h3>Your reccomendations are</h3>
-        <div>movie 1</div>
-        <div>movie 2</div>
-        <div>movie 3</div>
+        <div>{data.recommendations}</div>
       </div>
     </div>
   );

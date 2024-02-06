@@ -13,7 +13,7 @@ export default function Card({ title, image, description, genres }) {
         <div className="card-detail">
           <h3 className="card-title">{title}</h3>
           <p className="card-description">{description}</p>
-          <div class="card-footer">
+          <div className="card-footer">
             {genres.map((genre, i) => {
               return <span class="card-tags" key={i}>{genre + " "} </span>;
             })}

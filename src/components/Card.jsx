@@ -1,8 +1,4 @@
-import { useContext } from "react";
-import { MatchProviderContext } from "../providers/matchProvider";
-
 export default function Card({ title, image, description, genres }) {
-  const { cardData, setCardData } = useContext(MatchProviderContext);
   const imageUrl = "./public/images/" + image;
   return (
     <>
@@ -15,7 +11,11 @@ export default function Card({ title, image, description, genres }) {
           <p className="card-description">{description}</p>
           <div className="card-footer">
             {genres.map((genre, i) => {
-              return <span class="card-tags" key={i}>{genre + " "} </span>;
+              return (
+                <span className="card-tags" key={i}>
+                  {genre + " "}{" "}
+                </span>
+              );
             })}
           </div>
         </div>

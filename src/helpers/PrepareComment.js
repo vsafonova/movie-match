@@ -1,4 +1,4 @@
-export function usePrepareComment(data, cards, name) {
+export function prepareComment(data, cards, name) {
   const quoteObject = {
     Action: `Buckle up, ${name}, it seems action movies are your jam! Your movie nights are like a one-way ticket to the danger zone. Get ready for some thrilling recommendations to keep your heart racing and your popcorn flying!`,
     Adventure: `It seems adventure movies are right up your alley, ${name}! Your idea of a good time involves more treasure hunts than a pirate's map. Get ready to explore uncharted territories with these adventurous recommendations!`,
@@ -21,10 +21,10 @@ export function usePrepareComment(data, cards, name) {
 
   const genres = extractGenres(data, cards);
   const defaultQuote = `${name}, you are a picky one! You don't seem to like anything, that's a shame… I'm really good at recommending movies maybe for a stubborn one like you I could recommend 'Picky Blinders'. Please try again and be a bit more open-minded next round, I'm ready when you are!`;
-
-  const quote1 = quoteObject[genres[0]] || defaultQuote;
-  const quote2 = quoteObject[genres[1]] || defaultQuote;
-  return quote1;
+  let quote = [];
+  quote[0] = quoteObject[genres[0]] || defaultQuote;
+  quote[1] = quoteObject[genres[1]] || defaultQuote;
+  return quote;
 }
 
 function extractGenres(movieIds, cards) {
@@ -69,9 +69,6 @@ function topGenres(data) {
   // Convert object to array of key-value pairs
   const genres = Object.entries(data);
 
-  // const genres = objectentries
-  // const topGenres = tosorted genres,
-
   // Sort the array in descending order based on values
   const topGenres = genres.toSorted((a, b) => b[1] - a[1]);
 
@@ -79,19 +76,3 @@ function topGenres(data) {
 
   return finalTopGenres;
 }
-
-//usage will be variable = usePrepareComment(userData, cardData,userName)
-
-//Input - list of IDS
-
-//match IDs to correct film
-//extract genres from entry
-//add to list
-//go through list and count them
-
-//output - object containing a count of genres
-
-// const quotes = { Comedy: "funnyquotahaha", Action:"actioncommenty"}
-//const genre ="Comedy"
-//console.log(quotes.Comedy)
-//console.log(quotes[genre])

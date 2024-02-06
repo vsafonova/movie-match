@@ -8,12 +8,12 @@ export default function Card({ title, image, description, genres }) {
     <>
       <div className="card">
         <h1>{title}</h1>
-        <img src={imageUrl} alt="Poster image" height={250} width={200}></img>
-        <h4>Description:</h4>
+        <img src={imageUrl} alt="Poster image" width={200} height={300}></img>
+        <h4>Description</h4>
         <p>{description}</p>
         <div>
           {genres.map((genre, i) => {
-            return <span key={i}>{genre}</span>;
+            return <span key={i}>{genre + " "} </span>;
           })}
         </div>
       </div>

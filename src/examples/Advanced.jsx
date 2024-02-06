@@ -18,6 +18,7 @@ function Advanced() {
     setShowResult,
     showNameInput,
     setShowNameInput,
+    showInstructions,
   } = useContext(MatchProviderContext);
 
   const [currentIndex, setCurrentIndex] = useState(cardData.length - 1);
@@ -106,7 +107,7 @@ function Advanced() {
   };
 
   return (
-    <div>
+    <div className="wrapper">
       <link
         href="https://fonts.googleapis.com/css?family=Damion&display=swap"
         rel="stylesheet"
@@ -123,7 +124,10 @@ function Advanced() {
 
       <h1>Movie Match</h1>
 
-      <div className="cardContainer">
+      <div
+        className="card-container"
+        style={{ visibility: showInstructions ? "hidden" : "visible" }}
+      >
         {cardData.map((entry, index) => (
           <TinderCard
             ref={childRefs[index]}
@@ -132,12 +136,14 @@ function Advanced() {
             onSwipe={(dir) => swiped(dir, entry.title, index)}
             onCardLeftScreen={() => outOfFrame(entry.title, index)}
           >
-            <Card
-              title={entry.title}
-              description={entry.description}
-              image={entry.image}
-              genres={entry.genres}
-            />
+            <div style={{ width: "100%", overflow: "hidden" }}>
+              <Card
+                title={entry.title}
+                description={entry.description}
+                image={entry.image}
+                genres={entry.genres}
+              />
+            </div>
           </TinderCard>
         ))}
 
@@ -146,21 +152,22 @@ function Advanced() {
 
       <div
         className="buttons"
-
-        // style={{ visibility: showNameInput ? "hidden" : "visible" }}
+        style={{
+          visibility: showNameInput || showInstructions ? "hidden" : "visible",
+        }}
       >
         <button
           style={{ backgroundColor: !canSwipe && "#c3c4d3" }}
           onClick={() => swipe("left")}
         >
-          Swipe left
+          Swipe left ❌
         </button>
 
         <button
           style={{ backgroundColor: !canSwipe && "#c3c4d3" }}
           onClick={() => swipe("right")}
         >
-          Swipe right
+          Swipe right ❤️
         </button>
       </div>
     </div>

@@ -12,7 +12,6 @@ export default function NameInput() {
     setUsername(inputRef.current.value);
     inputRef.current.value = "";
     setShowNameInput(false);
-
     setShowResult(true);
   }
 

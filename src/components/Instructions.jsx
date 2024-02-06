@@ -37,5 +37,5 @@ export default function Instructions() {
       </div>
       <button onClick={handleClick}>Start</button>
     </div>
-  );  
+  );
 }

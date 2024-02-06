@@ -1,4 +1,4 @@
-import { useState, useEffect, createContext } from "react";
+import { useState, createContext } from "react";
 import useFetch from "../hooks/useFetch";
 
 export const MatchProviderContext = createContext();

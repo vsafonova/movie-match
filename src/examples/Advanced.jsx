@@ -30,8 +30,6 @@ function Advanced() {
 
   useEffect(() => {
     if (currentIndex < 0) {
-      console.log("Out of cards :(");
-
       setShowNameInput(true);
     }
   }, [currentIndex]);
@@ -109,10 +107,8 @@ function Advanced() {
             </div>
           </TinderCard>
         ))}
-
         <NameInput />
       </div>
-
       <div
         className="buttons"
         style={{

@@ -39,8 +39,6 @@ function extractGenres(movieIds, cards) {
   });
 
   // Remove duplicate genres (if any)
-  // console.log(countGenres(relatedGenres));
-  // console.log(topGenres(countGenres(relatedGenres)));
   const countedGenres = countGenres(relatedGenres);
   const genreArray = topGenres(countedGenres);
   return genreArray;

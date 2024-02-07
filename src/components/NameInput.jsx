@@ -1,4 +1,4 @@
-import { useContext, useRef } from "react";
+import { useContext, useRef, useState } from "react";
 import { MatchProviderContext } from "../providers/matchProvider";
 
 export default function NameInput() {
@@ -6,27 +6,34 @@ export default function NameInput() {
     useContext(MatchProviderContext);
 
   const inputRef = useRef();
+  const [error, setError] = useState("");
 
   function handleSubmit(e) {
     e.preventDefault();
-    setUsername(inputRef.current.value);
-    inputRef.current.value = "";
-    setShowNameInput(false);
-    setShowResult(true);
+    const username = inputRef.current.value.trim();
+    if (username === "") {
+      setError("Please enter your full name");
+    } else {
+      setUsername(username);
+      inputRef.current.value = "";
+      setShowNameInput(false);
+      setShowResult(true);
+    }
   }
 
   return (
     <div
       className="name-input"
-      style={{ visibility: showNameInput ? "visible" : "hidden" }}
+      style={{ display: showNameInput ? "block" : "none" }}
     >
-      <h2>Enter your first and last name</h2>
+      <h3>OK, now enter your full name</h3>
       <form>
-        <input type="text" ref={inputRef} />
-        <button type="submit" onClick={handleSubmit}>
+        <input className="username" type="text" ref={inputRef} /><br/>
+        <button className="button" type="submit" onClick={handleSubmit}>
           See Result
         </button>
       </form>
+      {error && <p className="error">{error}</p>}
     </div>
   );
 }

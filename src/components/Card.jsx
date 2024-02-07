@@ -1,9 +1,9 @@
-export default function Card({ title, image, description, genres }) {
-  const imageUrl = "./public/images/" + image;
+export default function Card({ isCurrent, title, image, description, genres }) {
+  const imageUrl = "./images/" + image;
   return (
     <>
       <div
-        className="card"
+        className={isCurrent + ' card'}
         style={{ backgroundImage: "url(" + imageUrl + ")" }}
       >
         <div className="card-detail">

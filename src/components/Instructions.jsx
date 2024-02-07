@@ -14,7 +14,7 @@ export default function Instructions() {
       style={{ visibility: showInstructions ? "visible" : "hidden" }}
       className="instructions-container"
     >
-      <h1>How to play</h1>
+      <h1 className="instruction-title">How to play</h1>
       <div className="instruction-text">
         <p className="intruction-text-content">
           Welcome to our highly biased movie and show collection! Wondering why
@@ -35,7 +35,7 @@ export default function Instructions() {
           exploration, begin!
         </p>
       </div>
-      <button onClick={handleClick}>Start</button>
+      <button className="button" onClick={handleClick}>Start</button>
     </div>
   );
 }

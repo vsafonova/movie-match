@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
+	<style>
+		.line {
+		stroke:#fff;
+		stroke-width:1.2px;
+		stroke-linecap:round;
+		stroke-linejoin:round;
+		stroke-miterlimit:10;
+		fill: none;
+		}
+		
+		.tick {
+		stroke-width:2px;
+		}
+		
+		.draw {
+		stroke-dasharray: 500;
+		stroke-dashoffset: 0;
+		animation-name: abx-draw;
+		animation-timing-function: linear;
+		animation-duration: 4s;
+		animation-iteration-count: infinite;
+		animation-direction: normal;
+		animation-delay: 1s;
+		}
+		
+		@keyframes abx-draw {
+		0% {stroke-dashoffset: 1000;}
+		100% {stroke-dashoffset: 0;}
+		}
+	</style>
+	<path class="" d="M0 0h24v24H0z" fill="none" />
+	<path class="line" d="M19 9l1.25-2.75L23 5l-2.75-1.25L19 1l-1.25 2.75L15 5l2.75 1.25L19 9zm-7.5.5L9 4 6.5 9.5 1 12l5.5 2.5L9 20l2.5-5.5L17 12l-5.5-2.5zM19 15l-1.25 2.75L15 19l2.75 1.25L19 23l1.25-2.75L23 19l-2.75-1.25L19 15z" />
+</svg>

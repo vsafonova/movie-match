@@ -2,316 +2,316 @@
   {
     "id": 0,
     "title": "Interstellar",
-    "genres": ["Sci-Fi", "Drama"],
-    "image": "interstellar.png",
-    "description": "A group of explorers travel through a wormhole in space to save humanity from extinction."
+    "genres": ["Sci-Fi"],
+    "image": "interstellar.jpg",
+    "description": "When Earth becomes uninhabitable in the future, a farmer and ex-NASA pilot, Joseph Cooper, is tasked to pilot a spacecraft, along with a team of researchers, to find a new planet for humans."
   },
   {
     "id": 1,
     "title": "The Secret Life of Walter Mitty",
-    "genres": ["Adventure", "Comedy", "Drama"],
-    "image": "the_secret_life_of_walter_mitty.png",
-    "description": "A daydreamer escapes his mundane life by embarking on a global journey of self-discovery and adventure."
+    "genres": ["Adventure", "Comedy"],
+    "image": "the_secret_life_of_walter_mitty.jpg",
+    "description": "When both he and a colleague are about to lose their job, Walter takes action by embarking on an adventure more extraordinary than anything he ever imagined.."
   },
   {
     "id": 2,
     "title": "Wonder",
     "genres": ["Drama", "Family"],
-    "image": "wonder.png",
-    "description": "A boy with facial differences enters a mainstream school, inspiring those around him to see beyond appearances."
+    "image": "wonder.jpg",
+    "description": "Based on the New York Times bestseller, this movie tells the incredibly inspiring and heartwarming story of August Pullman, a boy with facial differences who enters the fifth grade, attending a mainstream elementary school for the first time."
   },
   {
     "id": 3,
     "title": "CODA",
     "genres": ["Drama", "Music"],
-    "image": "coda.png",
-    "description": "The only hearing member of a deaf family pursues her passion for singing, challenging family dynamics."
+    "image": "coda.jpg",
+    "description": "As a CODA (Child of Deaf Adults) Ruby is the only hearing person in her deaf family. When the family's fishing business is threatened, Ruby finds herself torn between pursuing her passion at Berklee College of Music and her fear of abandoning her parents."
   },
   {
     "id": 4,
     "title": "The Royal Tenenbaums",
-    "genres": ["Comedy", "Drama"],
-    "image": "the_royal_tenenbaums.png",
-    "description": "A dysfunctional family of prodigies reunites when their estranged father announces his terminal illness."
+    "genres": ["Comedy"],
+    "image": "the_royal_tenenbaums.jpg",
+    "description": "The film **follows the lives of three siblings who are very successful in their youth, and experience sadness after their father leaves them during their adolescent years**."
   },
   {
     "id": 5,
     "title": "August: Osage County",
     "genres": ["Drama"],
-    "image": "august_osage_county.png",
-    "description": "A family crisis brings the strong-willed women of the Weston family back to their dysfunctional home."
+    "image": "august_osage_county.jpg",
+    "description": "A look at the lives of the strong-willed women of the Weston family, whose paths have diverged until a family crisis brings them back to the Oklahoma house they grew up in, and to the dysfunctional woman who raised them."
   },
   {
     "id": 6,
     "title": "En man som heter Ove",
     "genres": ["Comedy", "Drama"],
-    "image": "en_man_som_heter_ove.png",
-    "description": "A grumpy retiree forms an unexpected friendship with his new neighbors, leading to a change in perspective."
+    "image": "en_man_som_heter_ove.jpg",
+    "description": "Ove, an ill-tempered, isolated retiree who spends his days enforcing block association rules and visiting his wife's grave, has finally given up on life just as an unlikely friendship develops with his boisterous new neighbors."
   },
   {
     "id": 7,
     "title": "Her",
-    "genres": ["Drama", "Romance", "Sci-Fi"],
-    "image": "her.png",
-    "description": "A lonely man develops an emotional connection with an artificial intelligence operating system."
+    "genres": ["Romance", "Sci-Fi"],
+    "image": "her.jpg",
+    "description": "In a near future, a lonely writer develops an romantic relationship with an AI designed to meet his every need."
   },
   {
     "id": 8,
     "title": "The worst person in the world",
     "genres": ["Drama", "Romance"],
-    "image": "the_worst_person_in_the_world.png",
+    "image": "the_worst_person_in_the_world.jpg",
     "description": "A young woman navigates through love and life, facing the complexities of adulthood and self-discovery."
   },
   {
     "id": 9,
     "title": "Spring, Summer, Fall, Winter... and Spring",
     "genres": ["Drama"],
-    "image": "spring_summer_fall_winter_and_spring.png",
-    "description": "A Buddhist monk's life unfolds in a tranquil monastery, experiencing the cyclical nature of existence."
+    "image": "spring_summer_fall_winter_and_spring.jpg",
+    "description": "A boy is raised by a Buddhist monk in an isolated floating temple where the years pass like the seasons."
   },
   {
     "id": 10,
     "title": "The Fountain",
     "genres": ["Drama", "Sci-Fi"],
-    "image": "the_fountain.png",
-    "description": "Spanning centuries, a man seeks immortality to save his dying wife, exploring themes of love and mortality."
+    "image": "the_fountain.jpg",
+    "description": "As a modern-day scientist, Tommy is struggling with mortality, desperately searching for the medical breakthrough that will save the life of his cancer-stricken wife, Izzi."
   },
   {
     "id": 11,
     "title": "Arrival",
-    "genres": ["Drama", "Mystery", "Sci-Fi"],
-    "image": "arrival.png",
-    "description": "A linguist is recruited to communicate with extraterrestrial visitors, unraveling the mysteries of their intentions."
+    "genres": ["Mystery", "Sci-Fi"],
+    "image": "arrival.jpg",
+    "description": "A linguist works with the military to communicate with alien lifeforms after twelve mysterious spacecraft appear around the world."
   },
   {
     "id": 12,
     "title": "Inside Out",
     "genres": ["Animation", "Adventure", "Comedy"],
-    "image": "inside_out.png",
-    "description": "Emotions personified guide a young girl through the challenges of growing up, exploring joy, sadness, and more."
+    "image": "inside_out.jpg",
+    "description": "After young Riley is uprooted from her Midwest life and moved to San Francisco, her emotions - Joy, Fear, Anger, Disgust and Sadness - conflict on how best to navigate a new city, house, and school."
   },
   {
     "id": 13,
     "title": "Another Earth",
     "genres": ["Drama", "Romance", "Sci-Fi"],
-    "image": "another_earth.png",
-    "description": "Parallel universes and redemption intersect as a woman grapples with a tragic event and a new Earth is discovered."
+    "image": "another_earth.jpg",
+    "description": "On the night of the discovery of a duplicate Earth in the Solar system, an ambitious young student and an accomplished composer cross paths in a tragic accident."
   },
   {
     "id": 14,
     "title": "I Origins",
     "genres": ["Drama", "Romance", "Sci-Fi"],
-    "image": "i_origins.png",
+    "image": "i_origins.jpg",
     "description": "A molecular biologist's life takes unexpected turns as he explores scientific discoveries and the nature of existence."
   },
   {
     "id": 15,
     "title": "Mr. Nobody",
     "genres": ["Drama", "Fantasy", "Romance"],
-    "image": "mr_nobody.png",
-    "description": "In a world where a man is the last mortal human, he reflects on alternate lives and the impact of choices."
+    "image": "mr_nobody.jpg",
+    "description": "A boy stands on a station platform as a train is about to leave. Should he go with his mother or stay with his father? Infinite possibilities arise from this decision. As long as he doesn't choose, anything is possible."
   },
   {
     "id": 16,
     "title": "The Truman Show",
-    "genres": ["Comedy", "Drama", "Sci-Fi"],
-    "image": "the_truman_show.png",
+    "genres": ["Comedy", "Sci-Fi"],
+    "image": "the_truman_show.jpg",
     "description": "A man's life is a televised reality show, but he starts questioning the artificiality of his seemingly perfect world."
   },
   {
     "id": 17,
     "title": "Eternal Sunshine of the Spotless Mind",
     "genres": ["Drama", "Romance", "Sci-Fi"],
-    "image": "eternal_sunshine_of_the_spotless_mind.png",
+    "image": "eternal_sunshine_of_the_spotless_mind.jpg",
     "description": "After a painful breakup, a couple undergoes a procedure to erase memories, leading to unexpected revelations."
   },
   {
     "id": 18,
     "title": "Before Sunrise",
     "genres": ["Drama", "Romance"],
-    "image": "before_sunrise.png",
-    "description": "Two strangers meet on a train and spend an unforgettable night in Vienna, contemplating life and love."
+    "image": "before_sunrise.jpg",
+    "description": "A young man and woman meet on a train in Europe, and wind up spending one evening together in Vienna. Unfortunately, both know that this will probably be their only night together."
   },
   {
     "id": 19,
     "title": "Before Sunset",
     "genres": ["Drama", "Romance"],
-    "image": "before_sunset.png",
-    "description": "Reconnecting after years, a couple wanders through Paris, exploring the complexities of their past and present."
+    "image": "before_sunset.jpg",
+    "description": "Nine years after Jesse and Celine first met, they encounter each other again on the French leg of Jesse's book tour."
   },
   {
     "id": 20,
     "title": "Before Midnight",
     "genres": ["Drama", "Romance"],
-    "image": "before_midnight.png",
-    "description": "The enduring love story continues as a couple faces new challenges during a summer vacation in Greece."
+    "image": "before_midnight.jpg",
+    "description": "We meet Jesse and Celine nine years on in Greece. Almost two decades have passed since their first meeting on that train bound for Vienna."
   },
   {
     "id": 21,
     "title": "This Is Us",
-    "description": "A heartwarming family drama that follows the lives of the Pearson family through different timelines.",
-    "image": "this_is_us.png",
+    "description": "A heartwarming and emotional story about a unique set of triplets, their struggles, and their wonderful parents.",
+    "image": "this_is_us.jpg",
     "genres": ["Drama"]
   },
   {
     "id": 22,
     "title": "Ted Lasso",
     "description": "A feel-good comedy about an American football coach who becomes the coach of a struggling English soccer team.",
-    "image": "ted_lasso.png",
+    "image": "ted_lasso.jpg",
     "genres": ["Comedy", "Drama", "Sports"]
   },
   {
     "id": 23,
     "title": "After Life",
-    "description": "A dark comedy-drama series created by Ricky Gervais, exploring themes of grief and redemption.",
-    "image": "after_life.png",
+    "description": "After Tony's wife dies, his nice-guy persona is altered into an impulsive, devil-may-care attitude that takes his old world by storm.",
+    "image": "after_life.jpg",
     "genres": ["Comedy", "Drama"]
   },
   {
     "id": 24,
     "title": "Brassic",
-    "description": "A British comedy series that follows the misadventures of a group of friends living in a small town.",
-    "image": "brassic.png",
+    "description": "Comedy series about Vinnie and Dylan, who have grown up together and are inseparable. When Dylan's girlfriend wants to move in search of a better life for her and her son, he must face the hardest decision of his life.",
+    "image": "brassic.jpg",
     "genres": ["Comedy"]
   },
   {
     "id": 25,
     "title": "Chernobyl",
     "description": "A historical drama miniseries depicting the Chernobyl nuclear disaster and its aftermath.",
-    "image": "chernobyl.png",
+    "image": "chernobyl.jpg",
     "genres": ["Drama", "History", "Thriller"]
   },
   {
     "id": 26,
     "title": "Silo",
-    "description": "A series that explores the challenges and dangers of working in confined spaces such as silos.",
-    "image": "silo.png",
+    "description": "Men and women live in a giant silo underground with several regulations which they believe are in place to protect them from the toxic and ruined world on the surface.",
+    "image": "silo.jpg",
     "genres": ["Drama", "Thriller"]
   },
   {
     "id": 27,
     "title": "The Boys",
     "description": "A dark and irreverent take on the superhero genre, exploring the consequences of superpowers in the real world.",
-    "image": "the_boys.png",
+    "image": "the_boys.jpg",
     "genres": ["Action", "Comedy", "Crime"]
   },
   {
     "id": 28,
     "title": "Breaking Bad",
-    "description": "A high-stakes drama about a high school chemistry teacher turned methamphetamine producer.",
-    "image": "breaking_bad.png",
+    "description": "A chemistry teacher diagnosed with inoperable lung cancer turns to manufacturing and selling methamphetamine with a former student in order to secure his family's future.",
+    "image": "breaking_bad.jpg",
     "genres": ["Crime", "Drama", "Thriller"]
   },
   {
     "id": 29,
     "title": "Dexter: New Blood",
-    "description": "A continuation of the Dexter series, following the life of the forensic blood spatter analyst with a dark secret.",
-    "image": "dexter_new_blood.png",
+    "description": "Ten years after faking his death in Miami and moving to Upstate New York under an assumed name, Dexter gets an unexpected visit from the son he abandoned.",
+    "image": "dexter_new_blood.jpg",
     "genres": ["Crime", "Drama", "Mystery"]
   },
   {
     "id": 30,
     "title": "BoJack Horseman",
-    "description": "An animated series that satirizes Hollywood and explores the life of a washed-up horse actor.",
-    "image": "bojack_horseman.png",
+    "description": "BoJack Horseman is an American adult animated psychological comedy drama",
+    "image": "bojack_horseman.jpg",
     "genres": ["Animation", "Comedy", "Drama"]
   },
   {
     "id": 31,
     "title": "The Mandalorian",
     "description": "A Star Wars series following the adventures of a lone bounty hunter in the outer reaches of the galaxy.",
-    "image": "the_mandalorian.png",
+    "image": "the_mandalorian.jpg",
     "genres": ["Action", "Adventure", "Fantasy"]
   },
   {
     "id": 32,
     "title": "Altered Carbon",
     "description": "A cyberpunk series set in a future where consciousness can be transferred to different bodies, exploring themes of identity and mortality.",
-    "image": "altered_carbon.png",
+    "image": "altered_carbon.jpg",
     "genres": ["Drama", "Sci-Fi", "Thriller"]
   },
   {
     "id": 33,
     "title": "Prison Break",
     "description": "A suspenseful series about a man who deliberately gets himself imprisoned to help his wrongly accused brother escape.",
-    "image": "prison_break.png",
+    "image": "prison_break.jpg",
     "genres": ["Action", "Crime", "Drama"]
   },
   {
     "id": 34,
     "title": "The Walking Dead",
     "description": "A post-apocalyptic horror series that follows a group of survivors as they navigate a world overrun by zombies.",
-    "image": "the_walking_dead.png",
+    "image": "the_walking_dead.jpg",
     "genres": ["Drama", "Horror", "Thriller"]
   },
   {
     "id": 35,
     "title": "True Blood",
     "description": "A supernatural drama series set in a world where vampires and humans coexist, exploring the dynamics and conflicts between the two species.",
-    "image": "true_blood.png",
+    "image": "true_blood.jpg",
     "genres": ["Drama", "Fantasy", "Mystery"]
   },
   {
     "id": 36,
     "title": "Rick and Morty",
     "description": "An animated sci-fi sitcom that follows the adventures of an eccentric and alcoholic scientist and his good-hearted but easily influenced grandson.",
-    "image": "rick_and_morty.png",
+    "image": "rick_and_morty.jpg",
     "genres": ["Animation", "Adventure", "Comedy"]
   },
   {
     "id": 37,
-    "title": "The Queen’s Gambit",
-    "description": "A coming-of-age drama that follows a young orphaned chess prodigy as she rises to the top of the competitive chess world.",
-    "image": "queens_gambit.png",
+    "title": "The Queen's Gambit",
+    "description": "Orphaned at the tender age of nine, prodigious introvert Beth Harmon discovers and masters the game of chess in 1960s USA. But child stardom comes at a price.",
+    "image": "queens_gambit.jpg",
     "genres": ["Drama"]
   },
   {
     "id": 38,
     "title": "Supernatural",
-    "description": "A long-running series following two brothers who hunt demons, ghosts, monsters, and other supernatural beings.",
-    "image": "supernatural.png",
+    "description": "Two brothers follow their father's footsteps as hunters, fighting evil supernatural beings of many kinds, including monsters, demons, and gods that roam the earth.",
+    "image": "supernatural.jpg",
     "genres": ["Drama", "Fantasy", "Horror"]
   },
   {
     "id": 39,
     "title": "Euphoria",
     "description": "A teen drama series that explores the complexities of modern adolescence, including love, identity, and addiction.",
-    "image": "euphoria.png",
+    "image": "euphoria.jpg",
     "genres": ["Drama"]
   },
   {
     "id": 40,
     "title": "Halt and Catch Fire",
     "description": "A drama series set in the tech industry during the personal computer revolution and the rise of the World Wide Web.",
-    "image": "halt_and_catch_fire.png",
+    "image": "halt_and_catch_fire.jpg",
     "genres": ["Drama", "History"]
   },
   {
     "id": 41,
     "title": "Shameless",
     "description": "A dramedy series that follows the dysfunctional Gallagher family as they navigate life's challenges in Chicago's South Side.",
-    "image": "shameless.png",
+    "image": "shameless.jpg",
     "genres": ["Comedy", "Drama"]
   },
   {
     "id": 42,
     "title": "Better Call Saul",
     "description": "A prequel to Breaking Bad, focusing on the transformation of Jimmy McGill, a small-time lawyer, into the morally challenged lawyer Saul Goodman.",
-    "image": "better_call_saul.png",
+    "image": "better_call_saul.jpg",
     "genres": ["Crime", "Drama"]
   },
   {
     "id": 43,
     "title": "Gravity Falls",
     "description": "An animated mystery-comedy series following the adventures of two siblings spending their summer with their great-uncle in a mysterious town.",
-    "image": "gravity_falls.png",
+    "image": "gravity_falls.jpg",
     "genres": ["Animation", "Adventure", "Comedy"]
   },
   {
     "id": 44,
     "title": "The Sopranos",
     "description": "A critically acclaimed drama series that follows the life of mob boss Tony Soprano as he navigates the challenges of leading a criminal organization.",
-    "image": "the_sopranos.png",
+    "image": "the_sopranos.jpg",
     "genres": ["Crime", "Drama"]
   }
 ]

@@ -7,7 +7,6 @@ const useFetch = (url, method, payload) => {
   useEffect(() => {
     const fetchData = async () => {
       const jsonData = JSON.stringify(payload);
-      console.log("Stringfied payload : " + jsonData);
       try {
         const response = await fetch(url, {
           method,

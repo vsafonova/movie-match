@@ -1,4 +1,4 @@
-<b>Overview</b>
+<h1>Overview</h1>
 
 It's a one-page application where users can swipe right for liked and left for disliked movies and series like on Tinder. The generated quote reflects preferences based on the most popular genres for both movies and series that the user liked. 
 GPT chat creates a random list of suggested movies and series, utilizing the user's stored data. It also compares this data with other users in the database, seeking matches in genre preferences for both movies and series.

@@ -22,7 +22,7 @@ Design and develop a React application with dynamic, interactive user interfaces
 
 ## What we did in this group work:
 <ul>
-  <li>Implemented a Tinder-like swiping interface for users to express their preferences on movies and series</li>
+  <li>Implemented a Tinder-like swiping interface for users to express their preferences on movies and series.</li>
   <li>Integrated a third-party library for the swipe functionality, ensuring a smooth and intuitive user experience.</li>
   <li>Developed a dynamic system for suggesting movies and series using React state management.</li>
   <li>Utilized GPT chat functionality to generate personalized quotes based on user preferences and liked genres.</li>

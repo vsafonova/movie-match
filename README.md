@@ -3,9 +3,9 @@
 It's a one-page application where users can swipe right for liked and left for disliked movies and series like on Tinder. The generated quote reflects preferences based on the most popular genres for both movies and series that the user liked. 
 GPT chat creates a random list of suggested movies and series, utilizing the user's stored data. It also compares this data with other users in the database, seeking matches in genre preferences for both movies and series.
 
-***To meet best practices, enhance Lighthouse's metrics, and ensure accessibility, it's crucial to address the improvement of swipe functionality along with refining the website's performance and user experience***
+***To meet best practices, enhance Lighthouse's metrics, and ensure accessibility, it's crucial to address the improvement of swipe functionality along with refining the website's performance and user experience.***
 
-<ul>What we did
+<ul>What we did in this group work
   <li>Implemented a Tinder-like swiping interface for users to express their preferences on movies and series</li>
   <li>Integrated a third-party library for the swipe functionality, ensuring a smooth and intuitive user experience.</li>
   <li>Developed a dynamic system for suggesting movies and series using React state management.</li>
@@ -24,7 +24,7 @@ GPT chat creates a random list of suggested movies and series, utilizing the use
 ## Project Setup Instructions:
 To set up this project locally, follow the steps below:
 
-### To open website locally:
+### To open the website locally:
 
 1. **Clone the Repository:**
 

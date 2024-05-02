@@ -5,7 +5,23 @@ GPT chat creates a random list of suggested movies and series, utilizing the use
 
 ***To meet best practices, enhance Lighthouse's metrics, and ensure accessibility, it's crucial to address the improvement of swipe functionality along with refining the website's performance and user experience.***
 
-<ul>What we did in this group work
+## Project Brief dedicated React.js module
+Design and develop a React application with dynamic, interactive user interfaces, and demonstrate an understanding of component state and props, including using hooks to control component behavior and fetching data from APIs.
+
+## Criteria 
+ <ul>
+   <li>Use and composition of custom components.</li>
+   <li>Use of useState for maintaining the state of one or more components.</li>
+   <li>Use of event handlers for user interaction.</li>
+   <li>UI elements that update in response to app or component state changes.</li>
+   <li>Use of hooks for fetching data from an API (or backend server).</li>
+   <li>Use of one or more third-party libraries(for example a routing library, UI library, CSS framework, etc.).</li>
+   <li>Use of custom hooks for isolating reusable code.</li>
+   <li>Use of context for maintaining app state.</li>
+ </ul>
+
+## What we did in this group work:
+<ul>
   <li>Implemented a Tinder-like swiping interface for users to express their preferences on movies and series</li>
   <li>Integrated a third-party library for the swipe functionality, ensuring a smooth and intuitive user experience.</li>
   <li>Developed a dynamic system for suggesting movies and series using React state management.</li>
@@ -18,7 +34,7 @@ GPT chat creates a random list of suggested movies and series, utilizing the use
 * HTML / CSS /  React.js / PHP / Database
 
 ## Project links:
-### Website: [Visit our website](https://vsafonova.github.io/movie-match/)
+### Website: [Visit website](https://vsafonova.github.io/movie-match/)
 
 
 ## Project Setup Instructions:

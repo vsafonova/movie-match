@@ -5,7 +5,7 @@ GPT chat creates a random list of suggested movies and series, utilizing the use
 
 ***To meet best practices, enhance Lighthouse's metrics, and ensure accessibility, it's crucial to address the improvement of swipe functionality along with refining the website's performance and user experience.***
 
-## Project Brief dedicated to the React.js module
+## Project Brief
 Design and develop a React application with dynamic, interactive user interfaces, and demonstrate an understanding of component state and props, including using hooks to control component behavior and fetching data from APIs.
 
 ## Criteria 
